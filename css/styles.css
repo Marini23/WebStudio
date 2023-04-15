@@ -1254,6 +1254,9 @@ border: 1px solid #404BBF;
     .header-addres-list {
     display: flex;
     }
+    .header-addres-link:not(:last-child) {
+    margin-bottom: 0;
+    }
     .header-addres-list .header-addres-link+.header-addres-link {
         margin-left: 40px;
     }
