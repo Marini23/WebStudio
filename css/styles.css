@@ -274,15 +274,6 @@ padding: 112px 0;
             url(../images/hero-bg-m@2x.jpg);
     }
 }
-@media screen and (min-device-pixel-ratio: 2),
-(min-resolution: 192dpi),
-(min-resolution: 2dppx) {
-    .hero {
-    background-image:
-            linear-gradient(rgba(46, 47, 66, 0.7),
-                rgba(46, 47, 66, 0.7)),
-            url(../images/hero-bg-m@2x.jpg);}
-        }
 
 
 
@@ -1060,6 +1051,11 @@ border: 1px solid #404BBF;
     .container {
         width: 768px;
     }
+
+.header-container {
+    padding-bottom: 6px;
+    padding-top: 6px;
+}
 .header-list {
     display: flex;
     gap: 40px;
@@ -1145,17 +1141,17 @@ border: 1px solid #404BBF;
         .hero {
             background-image: 
             (rgba(46, 47, 66, 0.7),rgba(46, 47, 66, 0.7)),
-            url(../images/hero-bg-d@1x.jpg);
+            url(../images/hero-bg-t@1x.jpg);
         }
         }
     
 
-    @media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px),
-        (min-resolution: 192dpi) and (min-width: 1200px) {
+    @media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
+        (min-resolution: 192dpi) and (min-width: 768px) {
             .hero {
             background-image:
                 linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
-                url(../images/hero-bg-d@2x.jpg);
+                url(../images/hero-bg-t@2x.jpg);
             }
         }
 
@@ -1268,6 +1264,10 @@ border: 1px solid #404BBF;
     .section {
         padding: 120px 0;
     }
+    .header-container {
+        padding-top: 0;
+        padding-bottom: 0;
+    }
 
     .header {
     padding-top: 24px;
@@ -1289,10 +1289,6 @@ border: 1px solid #404BBF;
     .hero {
     max-width: 1440px;
     padding: 188px 0;
-    background-image:
-    linear-gradient(rgba(46, 47, 66, 0.7),
-    rgba(46, 47, 66, 0.7)),
-    url(../images/hero-bg-d@1x.jpg);
     }
 
     @media screen and (min-width: 1158px) {
@@ -1303,8 +1299,8 @@ border: 1px solid #404BBF;
     }
     }
 
-    @media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px),
-        (min-resolution: 192dpi) and (min-width: 1200px) {
+    @media screen and (min-device-pixel-ratio: 2) and (min-width: 1158px),
+        (min-resolution: 192dpi) and (min-width: 1158px) {
         .hero 
         {background-image:
         linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
